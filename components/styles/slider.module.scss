@@ -1,0 +1,49 @@
+.imagesList {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+    img{
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
+    }
+}
+
+.buttonLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    outline: transparent;
+    background-color: #000000a6;
+    color: whitesmoke;
+    z-index: 9999;
+}
+.buttonRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    outline: transparent;
+    background-color: #000000a6;
+    color: whitesmoke;
+    z-index: 9999;
+}
+
+@media only screen and (max-width: 400px){
+    .buttonLeft {
+        display: none;
+    }
+    .buttonRight {
+        display: none;
+    }
+    .imagesList {
+        overflow-x: auto;
+    }
+}

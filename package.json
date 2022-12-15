@@ -5,13 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export -o _static",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy-prod": "netlify deploy --site 757a00ca-e49d-446a-a309-477787180e3d --prod --dir _static"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "next": "13.0.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "^2.6.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.56.1"
   },
   "devDependencies": {
     "eslint": "8.28.0",

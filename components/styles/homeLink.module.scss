@@ -1,0 +1,36 @@
+.homeLinkContainer {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: whitesmoke;
+  max-width: 320px;
+  text-decoration: none;
+  &:hover {
+    color: gray;
+  }
+  .homeLink {
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 36px;
+    font-weight: 600;
+    background-color: #00000033;
+    letter-spacing: 0.2rem;
+    transition: all 0.5s ease-in-out;
+    margin: 0.2rem auto;
+    width: fit-content;
+    cursor: pointer;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    color: black;
+    margin-top: 1rem;
+    &:hover {
+      transform: rotate3d(1, 0, 0, 20deg);
+      color: white;
+    }
+    img {
+      max-width: 320px;
+    }
+  }
+}
