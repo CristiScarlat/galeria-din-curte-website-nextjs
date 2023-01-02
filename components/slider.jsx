@@ -1,51 +1,59 @@
 import { useRef, useState } from "react";
+import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import styles from "./styles/slider.module.scss";
 
-const Slider = ({ images, title }) => {
+const Slider = ({ images, title, date }) => {
   const [leftBtnDisabled, setLeftBtnDisabled] = useState(false);
   const [rightBtnDisabled, setRightBtnDisabled] = useState(false);
 
   const sliderRef = useRef();
 
   const handleScrollLeft = () => {
-    if(rightBtnDisabled)setRightBtnDisabled(false);
-    if(sliderRef.current.scrollLeft === 0){
-        setLeftBtnDisabled(true);
+    if (rightBtnDisabled) setRightBtnDisabled(false);
+    if (sliderRef.current.scrollLeft === 0) {
+      setLeftBtnDisabled(true);
     }
     sliderRef.current.scrollLeft -= 320;
   };
 
   const handleScrollRight = () => {
-    if(leftBtnDisabled)setLeftBtnDisabled(false);
-    if(sliderRef.current.scrollWidth - sliderRef.current.scrollLeft === sliderRef.current.clientWidth){
-        setRightBtnDisabled(true);
+    if (leftBtnDisabled) setLeftBtnDisabled(false);
+    if (
+      sliderRef.current.scrollWidth - sliderRef.current.scrollLeft ===
+      sliderRef.current.clientWidth
+    ) {
+      setRightBtnDisabled(true);
     }
-    console.log(sliderRef.current.scrollLeft, sliderRef.current.scrollWidth, sliderRef.current.clientWidth)
     sliderRef.current.scrollLeft += 320;
   };
 
   return (
     <div className="mt-2 mb-2">
-      <h4>{title}</h4>
-      <div key={title} style={{position: 'relative'}}>
-        <button 
-        className={styles.buttonLeft} 
-        onClick={handleScrollLeft} 
-        disabled={leftBtnDisabled} 
-        style={{visibility: leftBtnDisabled ? 'hidden' : 'visible'}}>
-          {"<<"}
+      <div className="d-flex align-items-center justify-content-between">
+        <h4>{title}</h4>
+        <span style={{color: 'gray'}}>{date}</span>
+      </div>
+      <div key={title} style={{ position: "relative" }}>
+        <button
+          className={styles.buttonLeft}
+          onClick={handleScrollLeft}
+          disabled={leftBtnDisabled}
+          style={{ visibility: leftBtnDisabled ? "hidden" : "visible" }}
+        >
+          <AiFillCaretLeft />
         </button>
         <div className={styles.imagesList} ref={sliderRef}>
           {images.map((img) => (
             <img key={img} src={img} alt={img} />
           ))}
         </div>
-        <button 
-        className={styles.buttonRight} 
-        onClick={handleScrollRight}
-        disabled={rightBtnDisabled} 
-        style={{visibility: rightBtnDisabled ? 'hidden' : 'visible'}}>
-          {">>"}
+        <button
+          className={styles.buttonRight}
+          onClick={handleScrollRight}
+          disabled={rightBtnDisabled}
+          style={{ visibility: rightBtnDisabled ? "hidden" : "visible" }}
+        >
+          <AiFillCaretRight />
         </button>
       </div>
     </div>

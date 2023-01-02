@@ -22,18 +22,22 @@ export default function Home() {
               backgroundPosition: 'center'
             }}>Galeria din Curte</HomeLink>
           </Link>
-          <HomeLink style={{
-            backgroundImage: 'url(/images/2.jpg)',
-            backgroundRepeat: 'no-repeat, repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}>Ateliere de artă plastică pentru copii și adolescenți</HomeLink>
-          <HomeLink style={{
-            backgroundImage: 'url(/images/3.jpg)',
-            backgroundRepeat: 'no-repeat, repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}>Colaborări</HomeLink>
+          <Link href="/ateliere" legacyBehavior passHref>
+            <HomeLink style={{
+              backgroundImage: 'url(/images/2.jpg)',
+              backgroundRepeat: 'no-repeat, repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}>Ateliere de artă plastică pentru copii și adolescenți</HomeLink>
+          </Link>
+          <Link href="/colaborations" legacyBehavior passHref>
+            <HomeLink style={{
+              backgroundImage: 'url(/images/3.jpg)',
+              backgroundRepeat: 'no-repeat, repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}>Colaborări</HomeLink>
+          </Link>
           <HomeLink style={{
             backgroundImage: 'url(/images/5.jpg)',
             backgroundRepeat: 'no-repeat, repeat',
