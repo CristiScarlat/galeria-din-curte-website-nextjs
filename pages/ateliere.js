@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { FcHome, FcGallery, FcCalendar } from 'react-icons/fc';
 import NavHeader from "../components/navHeader";
+import data from "../data/data.json";
+import styles from "../styles/Ateliere.module.css";
 
 const Ateliere = () => {
     const [selectedTab, setSelectedTab] = useState('expo');
@@ -42,7 +44,11 @@ const Ateliere = () => {
             </section>
             <hr />
             <section>
-                
+                <div className={styles.imagesGrid}>
+                    {data.atelier.images.big.map(image => (
+                        <img src={`images/${data.atelier.dir}/big/${image}`} alt="..."/>
+                    ))}
+                </div>
             </section>
         </main>
     )

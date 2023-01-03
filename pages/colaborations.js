@@ -44,7 +44,6 @@ const Colaborations = () => {
                         <Slider images={item.images.map(img => `images/${item.dir}/${img}`)} title={item.title} date={item.date}/> 
                         </>
                     ))}
-                    {/* <Slider images={expo.images.map(img => `images/${expo.dir}/${img}`)} title={expo.title} date={expo.date}/> */}
                 </div>
             ))}
         </main>

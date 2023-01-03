@@ -1,14 +1,10 @@
 .main {
   min-height: 100vh;
-  flex: 1;
+  max-width: 90rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-image: url(/images/11.jpg);
-  background-repeat: no-repeat, repeat;
-  background-size: cover; */
-  background-color: #210000;
 }
 
 .customCursor {
