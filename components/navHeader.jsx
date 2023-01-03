@@ -4,8 +4,8 @@ const NavHeader = ({ onTabSelect, selectedTab, items = [] }) => {
   return (
     <div className="header">
       {items.length > 0 &&
-        items.map((item) => (
-          <div className="text-center">
+        items.map((item, index) => (
+          <div key={item.label + "-" + index} className="text-center">
             <button
               className={styles.homeIcon}
               onClick={() => onTabSelect(item.path)}

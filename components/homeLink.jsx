@@ -10,4 +10,6 @@ const HomeLink = forwardRef(({ children, style, href }, ref) => {
   );
 });
 
+HomeLink.displayName = "HomeLink";
+
 export default HomeLink;

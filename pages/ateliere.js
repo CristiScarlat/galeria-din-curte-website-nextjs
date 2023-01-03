@@ -46,7 +46,7 @@ const Ateliere = () => {
             <section>
                 <div className={styles.imagesGrid}>
                     {data.atelier.images.big.map(image => (
-                        <img src={`images/${data.atelier.dir}/big/${image}`} alt="..."/>
+                        <img key={image} src={`images/${data.atelier.dir}/big/${image}`} alt="..."/>
                     ))}
                 </div>
             </section>
