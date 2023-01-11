@@ -16,7 +16,7 @@ export default function Home() {
         <section className="ms-3 me-3 d-flex justify-content-center align-items-center flex-wrap gap-3">
           <Link href="/gallery" legacyBehavior passHref>
             <HomeLink style={{
-              backgroundImage: 'url(/images/1.jpg)',
+              backgroundImage: 'url(/images/home/1.jpg)',
               backgroundRepeat: 'no-repeat, repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'center'
@@ -24,7 +24,7 @@ export default function Home() {
           </Link>
           <Link href="/ateliere" legacyBehavior passHref>
             <HomeLink style={{
-              backgroundImage: 'url(/images/2.jpg)',
+              backgroundImage: 'url(/images/home/6.jpg)',
               backgroundRepeat: 'no-repeat, repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'center'
@@ -32,18 +32,20 @@ export default function Home() {
           </Link>
           <Link href="/colaborations" legacyBehavior passHref>
             <HomeLink style={{
-              backgroundImage: 'url(/images/3.jpg)',
+              backgroundImage: 'url(/images/home/3.jpg)',
               backgroundRepeat: 'no-repeat, repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}>Colaborări</HomeLink>
           </Link>
-          <HomeLink style={{
-            backgroundImage: 'url(/images/5.jpg)',
-            backgroundRepeat: 'no-repeat, repeat',
-            backgroundSize: 'auto',
-            backgroundPosition: 'center'
-          }}>Despre noi</HomeLink>
+          <Link href="/about" legacyBehavior passHref>
+            <HomeLink style={{
+              backgroundImage: 'url(/images/home/8.jpg)',
+              backgroundRepeat: 'no-repeat, repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'top'
+            }}>Despre noi</HomeLink>
+          </Link>
         </section>
       </main>
     </div>

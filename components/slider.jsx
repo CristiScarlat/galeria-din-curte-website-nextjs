@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import styles from "./styles/slider.module.scss";
 
-const Slider = ({ images, title, date }) => {
+const Slider = ({ images, title, date, description }) => {
   const [leftBtnDisabled, setLeftBtnDisabled] = useState(false);
   const [rightBtnDisabled, setRightBtnDisabled] = useState(false);
 
@@ -32,6 +32,9 @@ const Slider = ({ images, title, date }) => {
       <div className="d-flex align-items-center justify-content-between">
         <h4>{title}</h4>
         <span style={{color: 'gray'}}>{date}</span>
+      </div>
+      <div>
+        {description && <p>{description}</p>}
       </div>
       <div key={title} style={{ position: "relative" }}>
         <button

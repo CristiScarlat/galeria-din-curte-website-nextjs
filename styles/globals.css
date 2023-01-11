@@ -6,7 +6,8 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Balsamiq Sans", cursive!important;
-  background-color: #210000!important;
+  /* background-color: #210000!important; */
+  background-color: #2c2e0e!important;
 }
 
 #__next {
@@ -35,6 +36,18 @@ main {
   margin: 1rem auto 0 auto;
   display: flex;
   gap: 2rem;
+}
+
+.youtubeIframe {
+  width: 601px;
+  height: 338px;
+}
+
+@media only screen and (max-width: 600px){
+  .youtubeIframe {
+      width: 300px;
+      height: 169px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

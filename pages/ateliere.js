@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { FcHome, FcGallery, FcCalendar } from 'react-icons/fc';
+import { FcHome, FcFilmReel, FcAbout } from 'react-icons/fc';
 import NavHeader from "../components/navHeader";
 import data from "../data/data.json";
 import styles from "../styles/Ateliere.module.css";
 
 const Ateliere = () => {
-    const [selectedTab, setSelectedTab] = useState('expo');
+    const [selectedTab, setSelectedTab] = useState('about');
     const router = useRouter();
 
     const navHeaderItems = [
@@ -14,6 +14,16 @@ const Ateliere = () => {
             label: 'Acasa',
             path: '/',
             icon: <FcHome size={40} />
+        },
+        {
+            label: 'Despre Ateliere',
+            path: 'about',
+            icon: <FcAbout size={40} />
+        },
+        {
+            label: 'Media',
+            path: 'media',
+            icon: <FcFilmReel size={40} />
         }
     ]
 
@@ -22,11 +32,11 @@ const Ateliere = () => {
             case '/':
                 router.push('/');
                 break;
-            case 'expo':
-                setSelectedTab('expo');
+            case 'media':
+                setSelectedTab('media');
                 break;
-            case 'events':
-                setSelectedTab('events');
+            case 'about':
+                setSelectedTab('about');
                 break;
         }
     }
@@ -35,6 +45,8 @@ const Ateliere = () => {
         <main>
             <NavHeader onTabSelect={onTabSelect} selectedTab={selectedTab} items={navHeaderItems}/>
             <hr />
+            {selectedTab === 'about' && 
+            <>
             <section>
                 <h4>Ateliere de arta cu artist plastic Dr. Oana Bolog-Bleich</h4>
                 <p>{`Contrary to popular belief, Lorem Ipsum is not simply random text. 
@@ -46,10 +58,16 @@ const Ateliere = () => {
             <section>
                 <div className={styles.imagesGrid}>
                     {data.atelier.images.big.map(image => (
-                        <img key={image} src={`images/${data.atelier.dir}/big/${image}`} alt="..."/>
+                        <img key={image} src={`images/${data.atelier.dir}/big/${image}`} alt="..." loading="lazy"/>
                     ))}
                 </div>
             </section>
+            </>}
+            {selectedTab === 'media' && <div className="d-flex align-items-center flex-column gap-3">
+                <iframe className="youtubeIframe" src="https://www.youtube.com/embed/7itNCEH1bLA" title="Expozitia copiilor, File de poveste, Galeria din Curte, Timisoara 2022." frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe className="youtubeIframe" src="https://www.youtube.com/embed/3jyjK7qdWCs" title="Expozitia de figurine FIMO, 2022." frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe className="youtubeIframe" src="https://www.youtube.com/embed/LwcmK5PTx54" title="Expozitie 2021- Cursul de educatie plastica pentru copii cu artist plastic dr.Oana Bolog-Bleich" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            </div>}
         </main>
     )
 }

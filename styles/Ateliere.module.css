@@ -11,3 +11,15 @@
     height: 320px;
     object-fit: cover;
 }
+
+.ateliereIframe {
+    width: 601px;
+    height: 338px;
+}
+
+@media only screen and (max-width: 600px){
+    .ateliereIframe {
+        width: 300px;
+        height: 169px;
+    }
+}
