@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && next export -o _static",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy-prod": "netlify deploy --site 757a00ca-e49d-446a-a309-477787180e3d --prod --dir _static"
+    "deploy-prod": "netlify deploy --site 757a00ca-e49d-446a-a309-477787180e3d --prod --dir out"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",

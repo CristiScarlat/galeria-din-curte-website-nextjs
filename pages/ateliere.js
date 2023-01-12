@@ -51,7 +51,7 @@ const Ateliere = () => {
                 <h4>Cursuri de arte plastice cu artist Dr. Oana Bolog-Bleich</h4>
                 <p>{`In cadru Galeriei din Curte într-o ambianță perfectă pentru creație, 
                 se desfășuară cursul de arte plastice dedicat copiilor și adolescenților.
-                Studiul artelor plastice, formează personalitatea celor tineri și dezvoltă sensibilitatea artistică
+                Studiul artelor plastice, formează personalitatea armonioasă celor tineri și dezvoltă sensibilitatea artistică
                 și educă cursanții in domeniul istoriei artei.`}</p>
             </section>
             <hr />
