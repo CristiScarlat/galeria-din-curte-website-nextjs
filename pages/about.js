@@ -31,10 +31,16 @@ const About = () => {
                 <img src="images/home/4.jpg" alt="artist" className={styles.artistPicture} />
                     <p>
                         <span className="me-2 fw-bolder text-white">Oana Bolog-Bleich</span>
-                        este un artist plastic profesionist din Timisoara, doctor in Arte vizuale, Universitatea de Vest, Facultatea de Arte si Design Timisoara, cu studii masterale in domeniul picturii la Facultatea de Arte si Design Timisoara si absolventa a  Facultattii de Arte si Design Timisoara.
-                        Cu o experienta de mai bine de 10 ani in domeniul educatiei plastice a copiilor si tinerilor care doresc sa se exprime prin arta vizuala. Oana Bolog-Bleich a organizat de-a lungul timpului diferite proiecte culturale dedicate copiilor si tinerilor alaturi de colaborari artistice cu Consulatul Spaniei la Timisoara, Casa de Cultura a Municipiului Timisoara si Consiliul Local Timisoara.
-                        A organizat numeorase expozitii ale copiilor participanti la cursul de educatie plastica.BASTION
-                        Activitatea artistica profesionala a artistei curpinde urmatoarele expozitii nationale si internationale.
+                        este un artist plastic profesionist din Timisoara, doctor in Arte Vizuale si Decorative, 
+                        absolventa a Facultatii de Arte si Design din cadru Universitatii de Vest Timisoara, 
+                        cu studii doctorale si masterale in domeniul picturii din cadrul aceleiasi universitati.
+                        Cu o experienta de mai bine de 10 ani in domeniul educatiei plastice a copiilor si tinerilor 
+                        care doresc sa se exprime prin arta vizuala, Oana Bolog-Bleich a organizat de-a lungul timpului diferite
+                         proiecte culturale dedicate copiilor si tinerilor alaturi de colaborari cu Consulatul Spaniei la Timisoara, 
+                         Casa de Cultura a Municipiului Timisoara si Consiliul Local Timisoara.
+                        A organizat numeorase expozitii ale copiilor participanti la cursul de educatie plastica.
+                        Printre altele la Centrul Multifunctional Bastion si la Galeria din Curte Timisoara.
+                        Activitatea profesionala a artistei curpinde urmatoarele expozitii nationale si internationale.
                     </p>
             </section>
             <section className={styles.section}>
@@ -46,7 +52,7 @@ const About = () => {
                     Galeria si-a propus sa intre in circuitul cultural artistic al orasului Timisoara, lasand o amprenta personala prin stimularea si promovarea potentialului creativ al cursantilor.
                     Galeria ofera spatiu expozitional intr-o incapere amenajata special, si functioneaza permanent ca atelier de educatie plastica pentru copii si adolescenti.
                     Galeria noastra si-a dovedit deja evolutia dinamica, atragand mereu noi cursanti dar si prin organizarea periodica a unor evenimente in cadrul carora au fost prezentate publicului lucrari ale micilor artisti si ale adolescentilor, participanti la cursul de arte.
-                    Au continuat in spatiul galeriei suita de ateliere de arta cu tematica spaniola demarate in 2018, menite sa faca cunoscute cursantilor viata si activitatea artistilor din Peninsula Iberica.cu sprijinul nemijlocit al Excelentei sale, domnul Consul al Spaniei la Timisoara, Jose Vinals Arino.
+                    Au continuat in spatiul galeriei suita de ateliere de arta cu tematica spaniola demarate in 2018, menite sa faca cunoscute cursantilor viata si activitatea artistilor din Spania.cu sprijinul nemijlocit al Excelentei sale, domnul Consul al Spaniei la Timisoara, Jose Vinals Arino.
 
                     Toate aceste activitati aduc tinerilor cursanti cunostinte valoroase despre arta plastica, contribuie la formarea unui public avizat, consumator de cultura si atrag atentia asupra unor repere din patrimoniul local si universal.
                     Ne propunem sa contribuim si pe viitor la formarea tinerilor artisti prin organizarea altor evenimente, expozitii si implicarea in proiecte culturale.
