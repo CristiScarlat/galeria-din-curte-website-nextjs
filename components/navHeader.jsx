@@ -12,7 +12,7 @@ const NavHeader = ({ onTabSelect, selectedTab, items = [] }) => {
             >
               {item.icon}
             </button>
-            <p style={selectedTab === item.path ? { opacity: 1 } : {opacity: 0.1}}>
+            <p style={selectedTab === item.path ? { opacity: 1 } : {opacity: 0.6}}>
               {item.label}
             </p>
           </div>

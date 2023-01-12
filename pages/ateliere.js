@@ -57,8 +57,8 @@ const Ateliere = () => {
             <hr />
             <section>
                 <div className={styles.imagesGrid}>
-                    {data.atelier.images.big.map(image => (
-                        <img key={image} src={`images/${data.atelier.dir}/big/${image}`} alt="..." loading="lazy"/>
+                    {data.atelier.images.map(image => (
+                        <img key={image} src={`images/${data.atelier.dir}/${image}`} alt="..." loading="lazy"/>
                     ))}
                 </div>
             </section>

@@ -32,7 +32,7 @@ const About = () => {
                     <p>
                         <span className="me-2 fw-bolder text-white">Oana Bolog-Bleich</span>
                         este un artist plastic profesionist din Timisoara, doctor in Arte Vizuale si Decorative, 
-                        absolventa a Facultatii de Arte si Design din cadru Universitatii de Vest Timisoara, 
+                        absolventa a Facultatii de Arte si Design din cadrul Universitatii de Vest Timisoara, 
                         cu studii doctorale si masterale in domeniul picturii din cadrul aceleiasi universitati.
                         Cu o experienta de mai bine de 10 ani in domeniul educatiei plastice a copiilor si tinerilor 
                         care doresc sa se exprime prin arta vizuala, Oana Bolog-Bleich a organizat de-a lungul timpului diferite
