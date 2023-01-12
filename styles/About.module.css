@@ -1,0 +1,22 @@
+.artistPicture {
+    width: 70%;
+    max-width: 35rem;
+    float: left;
+    margin: 0 1rem;
+    min-width: 350px;
+}
+
+.section {
+    max-width: 70rem;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .artistPicture {
+        margin: 1rem auto;
+    }
+    
+    .section {
+        margin: 1rem auto;
+    }
+}

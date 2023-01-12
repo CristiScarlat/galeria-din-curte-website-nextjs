@@ -30,14 +30,6 @@ export default function Home() {
               backgroundPosition: 'center'
             }}>Ateliere de artă plastică pentru copii și adolescenți</HomeLink>
           </Link>
-          <Link href="/colaborations" legacyBehavior passHref>
-            <HomeLink style={{
-              backgroundImage: 'url(/images/home/3.jpg)',
-              backgroundRepeat: 'no-repeat, repeat',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
-            }}>Colaborări</HomeLink>
-          </Link>
           <Link href="/about" legacyBehavior passHref>
             <HomeLink style={{
               backgroundImage: 'url(/images/home/8.jpg)',
@@ -45,6 +37,14 @@ export default function Home() {
               backgroundSize: 'cover',
               backgroundPosition: 'top'
             }}>Despre noi</HomeLink>
+          </Link>
+          <Link href="/colaborations" legacyBehavior passHref>
+            <HomeLink style={{
+              backgroundImage: 'url(/images/home/3.jpg)',
+              backgroundRepeat: 'no-repeat, repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}>Colaborări</HomeLink>
           </Link>
         </section>
       </main>

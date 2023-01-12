@@ -54,11 +54,19 @@ const Gallery = () => {
         <main>
             <NavHeader onTabSelect={onTabSelect} selectedTab={selectedTab} items={navHeaderItems} />
             <hr />
-            {selectedTab === 'expo' && data.gallery.map(expo => (
-                <section key={expo.title} style={{ margin: 'auto' }}>
-                    <Slider images={expo.images.map(img => `images/${expo.dir}/thumbnail_${img}`)} title={expo.title} date={expo.date} description={expo?.description}/>
+            {selectedTab === "expo" && data.gallery.map(expo => (
+                <div key={expo?.title} style={{ margin: 'auto' }}>
+                    {/* <hr style={{marginTop: 0}}/> */}
+                    <h4>{expo?.title}</h4>
+                    <p>{expo?.description}</p>
+                    {expo?.items?.map(item => (
+                        <>
+                            <Slider images={item?.images?.map(img => `images/${item.dir}/thumbnail_${img}`)} title={item.title} date={item.date} />
+                            <div className="mb-3" />
+                        </>
+                    ))}
                     <hr style={{ marginTop: 0 }} />
-                </section>
+                </div>
             ))}
             {selectedTab === "events" && data.galleryEvents.map(event => (
                 <div key={event.title} style={{ margin: 'auto' }}>
@@ -66,7 +74,7 @@ const Gallery = () => {
                         <h4>{event.title}</h4>
                         <span style={{ color: 'gray' }}>{event.date}</span>
                     </div>
-                    <p style={{ color: 'gray' }}>{event.description}</p>
+                    <p>{event.description}</p>
                     <>
                         <Slider images={event.items.map(img => `images/${event.dir}/thumbnail_${img}`)} title={''} date={''} />
                         <hr style={{ marginTop: 0 }} />

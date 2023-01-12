@@ -41,7 +41,6 @@ const Colaborations = () => {
         }
     }
 
-    //TODO add bastion_2019
     return(
         <main>
             <NavHeader onTabSelect={onTabSelect} selectedTab={selectedTab} items={navHeaderItems}/>
@@ -50,7 +49,7 @@ const Colaborations = () => {
                 <div key={colab.title} style={{ margin: 'auto'}}>
                     <hr style={{marginTop: 0}}/>
                     <h4>{colab.title}</h4>
-                    <p style={{color: 'gray'}}>{colab.description}</p>
+                    <p>{colab.description}</p>
                     {colab.items.map(item => (
                         <>
                         <hr style={{marginTop: 0}}/>
