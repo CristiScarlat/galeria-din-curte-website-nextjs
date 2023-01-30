@@ -293,7 +293,7 @@
   "colaborations": [
     {
       "category": "Consulatul Spaniol Timisoara",
-      "title": "Ateliere de artă organizate cu sprijinul consulatului spaniol din Timisoara",
+      "title": "Ateliere de artă cu tematică spaniolă la Galeria din Curte",
       "description": "multumiri - Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "items": [
         {
@@ -494,11 +494,11 @@
     },
     {
       "category": "Casa de cultura",
-      "title": "Ateliere de artă organizate cu sprijinul Casei de Cultura Timisoara",
+      "title": "Ateliere de artă cu tematică spaniolă la Casa de Cultură a Municipiului Timișoara",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
       "items": [
         {
-          "title": "Expozitie organizata cu sprijinul Casei de cultura",
+          "title": "",
           "date": "2022",
           "dir": "casa_de_cultura",
           "images": [
@@ -523,11 +523,11 @@
     },
     {
       "category": "M-Bistro",
-      "title": "Ateliere de arta pentru copii la terasa M-Bistro",
+      "title": "Ateliere de artă la terasa M-Bistro, Piața Unirii Timișoara",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
       "items": [
         {
-          "title": "Atelier organizat cu sprijinul M-Bistro",
+          "title": "",
           "date": "09-07-2021",
           "dir": "MBistro_9_iulie_2021",
           "images": [
@@ -616,22 +616,92 @@
   "atelier": {
     "dir": "in_atelier",
     "images": [
-        "283148295_10158533681215927_2102804798040186845_n.jpg",
-        "290869111_10158591241650927_2681951889461059894_n.jpg",
-        "290946240_10158591241810927_7521209362404551242_n.jpg",
-        "291348717_10158591241730927_3257916215196729805_n.jpg",
-        "291375559_10158591241555927_8918992814716650201_n.jpg",
-        "291408070_10158594473965927_4401359004604060377_n.jpg",
-        "291529186_10158594474150927_4970661069281197309_n.jpg",
-        "308319442_1042075906348718_6752512069986238679_n.jpg",
-        "308328461_606035697596587_7470451807012384865_n.jpg",
-        "308341121_818815135968450_8965550295521469996_n.jpg",
-        "308402925_449835983877176_73440709648929799_n.jpg",
-        "308685645_473699571340294_5335759780998308788_n.jpg",
-        "309016685_1367716877085515_1093604387883926707_n.jpg",
-        "IMG-20220421-WA0026.jpg",
-        "IMG-20220421-WA0027.jpg",
-        "IMG-20220421-WA0029.jpg"
+      "283148295_10158533681215927_2102804798040186845_n.jpg",
+      "290869111_10158591241650927_2681951889461059894_n.jpg",
+      "290946240_10158591241810927_7521209362404551242_n.jpg",
+      "291348717_10158591241730927_3257916215196729805_n.jpg",
+      "291375559_10158591241555927_8918992814716650201_n.jpg",
+      "291408070_10158594473965927_4401359004604060377_n.jpg",
+      "291529186_10158594474150927_4970661069281197309_n.jpg",
+      "308319442_1042075906348718_6752512069986238679_n.jpg",
+      "308328461_606035697596587_7470451807012384865_n.jpg",
+      "308341121_818815135968450_8965550295521469996_n.jpg",
+      "308402925_449835983877176_73440709648929799_n.jpg",
+      "308685645_473699571340294_5335759780998308788_n.jpg",
+      "309016685_1367716877085515_1093604387883926707_n.jpg",
+      "IMG-20220421-WA0026.jpg",
+      "IMG-20220421-WA0027.jpg",
+      "IMG-20220421-WA0029.jpg"
+    ]
+  },
+  "portret": [
+    {
+      "title": "Victor Sandor Codrea - 15 ani",
+      "items": [
+        {
+          "title": "Autoportret",
+          "dir": "album_victor/Autoportret",
+          "images": [
+            "SKMBT_C552220125171f10-2.jpg",
+            "SKMBT_C55222012517kk110-7.jpg",
+            "SKMBT_C55222012615230-11.jpg",
+            "SKMBT_C55222012615230-16.jpg",
+            "SKMBT_C55222012615230-17.jpg",
+            "SKMBT_C55222012615230-2.jpg",
+            "SKMBT_C55222012615230-3.jpg",
+            "SKMBT_C55222012616300-10.jpg",
+            "SKMBT_C55222012616300-5.jpg",
+            "SKMBT_C55222012616300-6.jpg",
+            "SKMBT_C55222012616300-7.jpg",
+            "SKMBT_C55222012616330-3.jpg",
+            "SKMBT_C55222012616330-6.jpg",
+            "SKMBT_C55222020315000-3.jpg",
+            "SKMBT_C55222020315080-7.jpg",
+            "gh.jpg",
+            "kikm.jpg"
+          ]
+        },
+        {
+          "title": "Autoportret in atelier",
+          "dir": "album_victor/Autoportret_in_atelier",
+          "images": ["SKMBT_C55222012615230-10.jpg","SKMBT_C55222012615230-14.jpg","SKMBT_C55222012616300-12.jpg","m.jpg"]
+        },
+        {
+          "title": "Autoportret cu Pantera Roz",
+          "dir": "album_victor/Autoportret_cu_Pantera_Roz",
+          "images": ["SKMBT_C55222012615230-12.jpg","SKMBT_C55222020315000-7.jpg","SKMBT_C55222020315080-9.jpg"]
+        },
+        {
+          "title": "Diverse",
+          "dir": "album_victor/Diverse",
+          "images": ["454.jpg","IMG-20200503-WA0013.jpg","IMG-20200503-WA0026.jpg","IMG-20200515-WA0014.jpg","IMG-20200515-WA0019.jpg","IMG-20200518-WA0020.jpg","IMG-20200519-WA0002.jpg","IMG-20200519-WA0032.jpg","IMG-20200519-WA0036.jpg","IMG-20200519-WA0037.jpg","IMG-20200519-WA0038.jpg","IMG-20200519-WA0039.jpg","IMG-20200519-WA0047.jpg","IMG-20200526-WA0001.jpg","IMG-20200527-WA0035.jpg","IMG-20200527-WA0036.jpg","IMG-20200527-WA0037.jpg","IMG-20200616-WA0096.jpg","IMG-20200617-WA0033.jpg","IMG-20200618-WA0021.jpg","IMG-20200618-WA0024.jpg","IMG-20200703-WA0005.jpg","IMG-20200703-WA0006.jpg","IMG-20200703-WA0008.jpg","IMG-20200715-WA0036.jpg","IMG-20200805-WA0053.jpg","IMG-20200805-WA0061.jpg","IMG-20200811-WA0006.jpg","IMG-20200817-WA0012.jpg","IMG-20200818-WA0005.jpg","IMG-20200819-WA0019.jpg","SKMBT_C55222012615230-15.jpg","SKMBT_C55222020315000-10.jpg","SKMBT_C55222020315000-15.jpg","SKMBT_C55222020315000-17.jpg","SKMBT_C55222020315000-2.psd","SKMBT_C55222020315000-25.jpg","SKMBT_C55222020315000-26.jpg","SKMBT_C55222020315000-29.jpg","SKMBT_C55222020315080-1.jpg","SKMBT_C55222020315080-10.jpg","SKMBT_C55222020315080-11.jpg","SKMBT_C55222020315080-17.jpg","SKMBT_C55222020315080-5.jpg","mm.jpg"]
+        },
+        {
+          "title": "Interioare",
+          "dir": "album_victor/Interioare",
+          "images": ["IMG-20200503-WA0026.jpg","SKMBT_C55222020315000-16.jpg","SKMBT_C55222020315000-2.jpg","SKMBT_C55222020315000-2.psd","SKMBT_C55222020315000-21.jpg","SKMBT_C55222020315080-20.jpg","SKMBT_C55222020315080-8.jpg"]
+        },
+        {
+          "title": "Peisaje",
+          "dir": "album_victor/Peisaje",
+          "images": ["SKMBT_C55222012516380-1.jpg","SKMBT_C55222012516380-11.jpg","SKMBT_C55222012516490-21.jpg","SKMBT_C55222012516490-23.jpg","SKMBT_C5522201hhh2517110-5.jpg","SKMBT_C5522201hhh2517110-6.jpg","SKMBT_C55222020315000-20.jpg","SKMBT_C55222020315000-23.jpg","SKMBT_C55222020315000-5.jpg","f.jpg","ff.jpg"]
+        },
+        {
+          "title": "Tauri si autoportret",
+          "dir": "album_victor/Tauri_si_autoportret",
+          "images": ["10.jpg","99.jpg","SKMBT_C55222012517110-1.jpg","SKMBT_C55222012517nnn110-8.jpg","SKMBT_C55222012615230-13.jpg","SKMBT_C55222012615230-4.jpg","SKMBT_C55222012615230-5.jpg","SKMBT_C55222012615230-6.jpg","SKMBT_C55222012615230-7.jpg","SKMBT_C55222012615230-8.jpg","SKMBT_C55222012615230-9.jpg","SKMBT_C55222012616300-11.jpg","SKMBT_C55222012616300-2.jpg","SKMBT_C55222012616300-3.jpg","SKMBT_C55222012616300-4.jpg","SKMBT_C55222012616300-8.jpg","SKMBT_C55222012616300-9.jpg","SKMBT_C55222012616330-1.jpg","SKMBT_C55222012616330-2.jpg","SKMBT_C55222012616330-4.jpg","SKMBT_C55222012616330-5.jpg","SKMBT_C55222020315000-18.jpg","dsssss.jpg","fg.jpg","gg.jpg","hgy.jpg","hhh.jpg","j.jpg","kjkjjjhh.jpg","kk.jpg","kl.jpg","lklklklk.jpg","lll.jpg","mkll.jpg","mml.jpg","nj.jpg","qqq.jpg","wd.jpg"]
+        },
+        {
+          "title": "Timisoara",
+          "dir": "album_victor/Timisoara",
+          "images": ["SKMBT_C55222012516360-1.jpg","SKMBT_C55222012516360-2.jpg","SKMBT_C55222012516360-3.jpg","SKMBT_C55222012516360-4.jpg","SKMBT_C55222012516360-5.jpg","SKMBT_C55222012516360-6.jpg","SKMBT_C55222012516380-4.jpg","SKMBT_C55222012516380-5.jpg","SKMBT_C55222012516380-7.jpg","SKMBT_C55222012516490-1.jpg","SKMBT_C55222012516490-12.jpg","SKMBT_C55222012516490-3.jpg","SKMBT_C55222012516490-6.jpg","SKMBT_C55222012516490-7.jpg","SKMBT_C55222012615230-1.jpg","SKMBT_C55222012616300-1.jpg","SKMBT_C55222020315000-12.jpg","SKMBT_C55222020315000-13.jpg","SKMBT_C55222020315000-22.jpg","SKMBT_C55222020315000-24.jpg","SKMBT_C55222020315000-27.jpg","SKMBT_C55222020315000-28.jpg","SKMBT_C55222020315000-4.jpg","SKMBT_C55222020315000-8.jpg","SKMBT_C55222020315080-16.jpg","SKMBT_C55222020315080-2.jpg","SKMBT_C55222020315080-3.jpg","SKMBT_C55222020315080-4.jpg","SKMBT_C55222020315080-6.jpg"]
+        },
+        {
+          "title": "Turnul de apa",
+          "dir": "album_victor/Turnul_de_apa",
+          "images": ["454.jpg","SKMBT_C55222012516380-10.jpg","SKMBT_C55222012516380-2.jpg","SKMBT_C55222012516380-3.jpg","SKMBT_C55222012516380-6.jpg","SKMBT_C55222012516380-8.jpg","SKMBT_C55222012516380-9.jpg","SKMBT_C55222012516490-10.jpg","SKMBT_C55222012516490-2.jpg","SKMBT_C55222012516490-4.jpg","SKMBT_C55222012516490-5.jpg","SKMBT_C55222020315000-11.jpg","SKMBT_C55222020315000-14.jpg","SKMBT_C55222020315000-19.jpg"]
+        }
       ]
     }
+  ]
 }

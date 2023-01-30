@@ -82,7 +82,10 @@ const Gallery = () => {
                 </div>
             ))}
             {selectedTab === 'media' && <div className="d-flex align-items-center flex-column gap-3">
-                <iframe className="youtubeIframe" src="https://www.youtube.com/embed/AF9HRZ3RIUI" title="Oana Bolog-Bleich - la artista que introduce el arte español a los niños de Timișoara" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <div className="text-center">
+                    <h5>Interviu realizat la inițiativa domnului Consul Jose Vinals Ariño, publicat pe canalul youtube Timișoara en español.</h5>
+                    <iframe className="youtubeIframe" src="https://www.youtube.com/embed/AF9HRZ3RIUI" title="Oana Bolog-Bleich - la artista que introduce el arte español a los niños de Timișoara" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                </div>
             </div>}
         </main>
     );
