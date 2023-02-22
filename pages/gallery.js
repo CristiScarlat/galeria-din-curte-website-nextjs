@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Slider from '../components/slider';
 import data from '../data/data.json';
-import styles from "../styles/Gallery.module.css";
 import { useRouter } from 'next/router';
 import NavHeader from '../components/navHeader';
 import { FcHome, FcGallery, FcCalendar, FcFilmReel } from 'react-icons/fc';
@@ -83,7 +82,7 @@ const Gallery = () => {
             ))}
             {selectedTab === 'media' && <div className="d-flex align-items-center flex-column gap-3">
                 <div className="text-center">
-                    <h5 className="m-auto mb-3" style={{maxWidth: '60%'}}>Interviu realizat la inițiativa domnului Consul Jose Vinals Ariño, publicat pe canalul youtube Timișoara en español.</h5>
+                    <h5 className="m-auto mb-3" style={{maxWidth: '60%'}}>Interviu realizat la inițiativa domnului Consul Jose Miguel Viñals Ariño, publicat pe canalul youtube Timișoara en español.</h5>
                     <iframe className="youtubeIframe" src="https://www.youtube.com/embed/AF9HRZ3RIUI" title="Oana Bolog-Bleich - la artista que introduce el arte español a los niños de Timișoara" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
                 <hr style={{ marginTop: 0, width: "100%"}} />
