@@ -88,7 +88,7 @@ const Ateliere = () => {
                             <>
                                 <Slider
                                     images={item?.images?.map(
-                                        (img) => `images/${item.dir}/${img}`
+                                        (img) => `images/${item.dir}/thumbnail_${img}`
                                     )}
                                     title={item.title}
                                 />

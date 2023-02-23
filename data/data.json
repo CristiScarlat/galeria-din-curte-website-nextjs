@@ -1,43 +1,6 @@
 {
   "gallery": [
-    {
-      "items": [
-        {
-          "title": "Casa mea din Cetate",
-          "date": "22-oct-2022",
-          "dir": "casa_mea_din_cetate",
-          "images": [
-            "00.JPG",
-            "01.JPG",
-            "03.JPG",
-            "04.JPG",
-            "05.JPG",
-            "06.JPG",
-            "07.JPG",
-            "08.JPG",
-            "09.JPG",
-            "10.JPG",
-            "11.JPG",
-            "12.JPG",
-            "13.JPG",
-            "14.JPG",
-            "15.JPG",
-            "16.JPG",
-            "17.JPG",
-            "18.JPG",
-            "19.JPG",
-            "20.JPG",
-            "21.JPG",
-            "22.JPG",
-            "23.JPG",
-            "24.JPG",
-            "25.JPG",
-            "26.JPG",
-            "27.JPG"
-          ]
-        }
-      ]
-    },
+    
     {
       "title": "File de poveste",
       "date": "07-mai-2022",
