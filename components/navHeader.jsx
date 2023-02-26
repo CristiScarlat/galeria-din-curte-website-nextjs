@@ -1,6 +1,6 @@
 import styles from "./styles/navHeader.module.scss";
 
-const NavHeader = ({ onTabSelect, selectedTab, items = [] }) => {
+const NavHeader = ({ onTabSelect, selectedTab, items = [], contact }) => {
   return (
     <div className="header">
       {items.length > 0 &&
@@ -17,6 +17,11 @@ const NavHeader = ({ onTabSelect, selectedTab, items = [] }) => {
             </p>
           </div>
         ))}
+        {contact && <div className="d-flex flex-column justify-content-center">
+          {Object.keys(contact).map(k => (
+            <p className="m-0"><span className="me-1">{k}:</span>{contact[k]}</p>
+          ))}
+        </div>}
     </div>
   );
 };

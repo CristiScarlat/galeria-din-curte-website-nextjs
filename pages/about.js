@@ -26,38 +26,37 @@ const About = () => {
     }
     return (
         <>
-            <NavHeader onTabSelect={onTabSelect} selectedTab={selectedTab} items={navHeaderItems} />
+            <NavHeader onTabSelect={onTabSelect} selectedTab={selectedTab} items={navHeaderItems} contact={{email: "oanabologbleich@gmail.com", telefon: "0723673373"}}/>
             <hr />
             <section className={styles.section}>
                 <img src="/images/home/4.jpg" alt="artist" className={styles.artistPicture}/>
                     <p>
                         <span className="me-2 fw-bolder text-white">Oana Bolog-Bleich</span>
-                        este un artist plastic profesionist din Timisoara, doctor in Arte Vizuale si Decorative, 
-                        absolventa a Facultatii de Arte si Design din cadrul Universitatii de Vest Timisoara, 
-                        cu studii doctorale si masterale in domeniul picturii din cadrul aceleiasi universitati.
-                        Cu o experienta de mai bine de 10 ani in domeniul educatiei plastice a copiilor si tinerilor 
-                        care doresc sa se exprime prin arta vizuala, Oana Bolog-Bleich a organizat de-a lungul timpului diferite
-                         proiecte culturale dedicate copiilor si tinerilor alaturi de colaborari cu Consulatul Spaniei la Timisoara, 
-                         Casa de Cultura a Municipiului Timisoara si Consiliul Local Timisoara.
-                        A organizat numeorase expozitii ale copiilor participanti la cursul de educatie plastica.
+                        este un artist plastic profesionist din Timișoara, doctor în Arte Vizuale si Decorative, 
+                        absolventă a Facultații de Arte și Design din cadrul Universității de Vest Timișoara, 
+                        cu studii doctorale și masterale în domeniul picturii din cadrul aceleiași universitați.
+                        Cu o experiență de mai bine de 10 ani in domeniul educației plastice a copiilor și tinerilor 
+                        care doresc sa se exprime prin arta vizuală, Oana Bolog-Bleich a organizat de-a lungul timpului diferite
+                         proiecte culturale dedicate copiilor și tinerilor alături de colaborari cu Consulatul Spaniei la Timișoara, 
+                         Casa de Cultură a Municipiului Timișoara si Consiliul Local Timișoara.
+                        A organizat numeorase expozitii ale copiilor participanti la cursul de educatie plastică.
                         Printre altele la Centrul Multifunctional Bastion si la Galeria din Curte Timisoara.
-                        Activitatea profesionala a artistei curpinde urmatoarele expozitii nationale si internationale.
                     </p>
             </section>
             <section className={styles.section}>
                 <p>
                     <span className="me-2 fw-bolder text-white">Cursul de arte plastice condus de artist plastic dr. Oana Bolog-Bleich,</span>
-                    {`care are un istoric de mai bine de 10 ani, si-a gasit locatia visata in imobilul din strada Gh.Lazar nr 4 din Timisoara, Palatul Laszlo Kralik, cladire al carei trecut si prezent ofera ambianta perfecta pentru creatie.
-                    Astfel s-a nascut in anul 2021 Galeria din Curte, ca ocomunitate de artisti realizati sau in devenire.
+                    {`care are un istoric de mai bine de 10 ani, si-a gasit locatia visată în imobilul din strada Gh.Lazar nr 4 din Timișoara, Palatul Laszlo Kralik, clădire al carei trecut și prezent oferă ambianța perfectă pentru creatie.
+                    Astfel s-a născut în anul 2021 Galeria din Curte, ca o comunitate de artiști realizați sau în devenire.
                     
-                    Galeria si-a propus sa intre in circuitul cultural artistic al orasului Timisoara, lasand o amprenta personala prin stimularea si promovarea potentialului creativ al cursantilor.
-                    Galeria ofera spatiu expozitional intr-o incapere amenajata special și functioneaza permanent ca atelier de educatie plastica pentru copii si adolescenti.
-                    Galeria noastra si-a dovedit deja evolutia dinamica, atragand mereu noi cursanți dar si prin organizarea periodica a unor evenimente in cadrul carora au fost prezentate publicului lucrari ale micilor artisti si ale adolescentilor, participanti la cursul de arte.
-                    Au continuat in spatiul galeriei suita de ateliere de arta cu tematica spaniola demarate in 2018, menite sa faca cunoscute cursantilor viața si activitatea artiștilor din Spania, cu sprijinul nemijlocit al Excelentei sale, domnul Consul al Spaniei la Timisoara, Jose Miguel Viñals Ariño.
+                    Galeria și-a propus sa intre in circuitul cultural artistic al orașului Timișoara, lăsând o amprentă personală prin stimularea și promovarea potențialului creativ al cursanților.
+                    Galeria oferă spațiu expozițional într-o încăpere amenajată special și functionează permanent ca atelier de educatie plastică pentru copii și adolescenți.
+                    Galeria noastră și-a dovedit deja evoluția dinamică, atrăgând mereu noi cursanți dar și prin organizarea periodică a unor evenimente în cadrul cărora au fost prezentate publicului lucrări ale micilor artiști și ale adolescenților, participanți la cursul de arte.
+                    Au continuat in spațiul galeriei suita de ateliere de artă cu tematică spaniolă demarate în 2018, menite să facă cunoscute cursanților viața și activitatea artiștilor din Spania, cu sprijinul nemijlocit al Excelenței sale, domnul Consul al Spaniei la Timișoara, Jose Miguel Viñals Ariño.
                     
-                    Toate aceste activități aduc tinerilor cursanți cunostinte valoroase despre arta plastica, contribuie la formarea unui public avizat, consumator de cultura si atrag atentia asupra unor repere din patrimoniul local si universal.
-                    Ne propunem sa contribuim si pe viitor la formarea tinerilor artiști prin organizarea de evenimente, expozitii și implicarea in proiecte sociale și culturale.
-                    Suntem increzatori ca galeria noastra va fi o gazda primitoare pentru artistii locali, a caror creatie rezoneaza cu scopurile pe care le-am infatisat.`}
+                    Toate aceste activități aduc tinerilor cursanți cunostințe valoroase despre arta plastică, contribuie la formarea unui public avizat, consumator de cultură și atrag atenția asupra unor repere din patrimoniul local si universal.
+                    Ne propunem sa contribuim și pe viitor la formarea tinerilor artiști prin organizarea de evenimente, expoziții și implicarea in proiecte sociale și culturale.
+                    Suntem încrezatori că galeria noastra va fi o gazda primitoare pentru artiștii locali, a căror creație rezonează cu scopurile pe care le-am înfățișat.`}
                 </p>
             </section>
         </>

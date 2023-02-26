@@ -7,6 +7,14 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.main}>
         <section className="ms-3 me-3 d-flex justify-content-center align-items-center flex-wrap gap-3">
+        <Link href={{ pathname: '/gallery', query: { tab: 'events' } }} legacyBehavior passHref>
+            <HomeLink style={{
+              backgroundImage: 'url(/images/rendezVousLaKralik/rendezVousLaKralik.jpeg)',
+              backgroundRepeat: 'no-repeat, repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}>Rendez-vous la Kralik</HomeLink>
+          </Link>
           <Link href="/gallery" legacyBehavior passHref>
             <HomeLink style={{
               backgroundImage: 'url(/images/home/1.jpg)',

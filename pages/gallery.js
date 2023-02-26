@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Slider from '../components/slider';
 import data from '../data/data.json';
 import { useRouter } from 'next/router';
@@ -8,6 +8,13 @@ import { FcHome, FcGallery, FcCalendar, FcFilmReel } from 'react-icons/fc';
 const Gallery = () => {
     const [selectedTab, setSelectedTab] = useState('expo');
     const router = useRouter();
+    console.log(router.query)
+
+    useEffect(() => {
+        if(router.query?.tab){
+            setSelectedTab(router.query.tab)
+        }
+    }, [router.query])
 
     const navHeaderItems = [
         {
@@ -75,7 +82,7 @@ const Gallery = () => {
                     </div>
                     <p>{event.description}</p>
                     <>
-                        <Slider images={event.items.map(img => `/images/${event.dir}/thumbnail_${img}`)} title={''} date={''} />
+                        {(event.items && event.items.length > 0) && <Slider images={event.items.map(img => `/images/${event.dir}/thumbnail_${img}`)} title={''} date={''} />}
                         <hr style={{ marginTop: 0 }} />
                     </>
                 </div>
