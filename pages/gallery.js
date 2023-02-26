@@ -50,7 +50,7 @@ const Gallery = () => {
     }
 
     return (
-        <main>
+        <>
             <NavHeader onTabSelect={onTabSelect} selectedTab={selectedTab} items={navHeaderItems} />
             <hr />
             {selectedTab === "expo" && data.gallery.map(expo => (
@@ -58,9 +58,9 @@ const Gallery = () => {
                     {/* <hr style={{marginTop: 0}}/> */}
                     <h4>{expo?.title}</h4>
                     <p>{expo?.description}</p>
-                    {expo?.items?.map(item => (
+                    {expo?.items?.map((item, index) => (
                         <>
-                            <Slider images={item?.images?.map(img => `images/${item.dir}/thumbnail_${img}`)} title={item.title} date={item.date} />
+                            <Slider key={item.title + index} images={item?.images?.map(img => `/images/${item.dir}/thumbnail_${img}`)} title={item.title} date={item.date} />
                             <div className="mb-3" />
                         </>
                     ))}
@@ -75,7 +75,7 @@ const Gallery = () => {
                     </div>
                     <p>{event.description}</p>
                     <>
-                        <Slider images={event.items.map(img => `images/${event.dir}/thumbnail_${img}`)} title={''} date={''} />
+                        <Slider images={event.items.map(img => `/images/${event.dir}/thumbnail_${img}`)} title={''} date={''} />
                         <hr style={{ marginTop: 0 }} />
                     </>
                 </div>
@@ -91,7 +91,7 @@ const Gallery = () => {
                     <iframe className="youtubeIframe" src="https://www.youtube.com/embed/iu2k9kZlwJE" title="Proiectul, CASA MEA DIN CETATE." frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
             </div>}
-        </main>
+        </>
     );
 }
 

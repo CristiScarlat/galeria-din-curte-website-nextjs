@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import HomeLink from '../components/homeLink';
 import styles from '../styles/Home.module.css';
@@ -6,13 +5,7 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Galeria din curte</title>
-        <meta name="description" content="The oficial website of art gallery Galeria din curte" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
+      <div className={styles.main}>
         <section className="ms-3 me-3 d-flex justify-content-center align-items-center flex-wrap gap-3">
           <Link href="/gallery" legacyBehavior passHref>
             <HomeLink style={{
@@ -47,7 +40,7 @@ export default function Home() {
             }}>Colaborări</HomeLink>
           </Link>
         </section>
-      </main>
+      </div>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FcHome } from 'react-icons/fc';
 import NavHeader from "../components/navHeader";
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import styles from "../styles/About.module.css";
 
 const About = () => {
@@ -24,11 +25,11 @@ const About = () => {
         }
     }
     return (
-        <main>
+        <>
             <NavHeader onTabSelect={onTabSelect} selectedTab={selectedTab} items={navHeaderItems} />
             <hr />
             <section className={styles.section}>
-                <img src="images/home/4.jpg" alt="artist" className={styles.artistPicture} />
+                <img src="/images/home/4.jpg" alt="artist" className={styles.artistPicture}/>
                     <p>
                         <span className="me-2 fw-bolder text-white">Oana Bolog-Bleich</span>
                         este un artist plastic profesionist din Timisoara, doctor in Arte Vizuale si Decorative, 
@@ -59,7 +60,7 @@ const About = () => {
                     Suntem increzatori ca galeria noastra va fi o gazda primitoare pentru artistii locali, a caror creatie rezoneaza cu scopurile pe care le-am infatisat.`}
                 </p>
             </section>
-        </main>
+        </>
     )
 }
 

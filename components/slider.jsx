@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import styles from "./styles/slider.module.scss";
+import Image from "next/image";
 
 const Slider = ({ images, title, date, description }) => {
   const [leftBtnDisabled, setLeftBtnDisabled] = useState(false);
@@ -47,7 +48,7 @@ const Slider = ({ images, title, date, description }) => {
         </button>
         <div className={styles.imagesList} ref={sliderRef}>
           {images.map((img) => (
-            <img key={img} src={img} alt={img} />
+            <Image key={img} src={img} alt={img} width={320} height={320}/>
           ))}
         </div>
         <button

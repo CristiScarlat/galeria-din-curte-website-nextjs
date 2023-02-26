@@ -5,6 +5,7 @@ import NavHeader from "../components/navHeader";
 import data from "../data/data.json";
 import styles from "../styles/Ateliere.module.css";
 import Slider from '../components/slider';
+import Image from 'next/image';
 
 const Ateliere = () => {
     const [selectedTab, setSelectedTab] = useState('about');
@@ -51,7 +52,7 @@ const Ateliere = () => {
     }
 
     return (
-        <main>
+        <>
             <NavHeader onTabSelect={onTabSelect} selectedTab={selectedTab} items={navHeaderItems} />
             <hr />
             {selectedTab === 'about' &&
@@ -69,7 +70,7 @@ const Ateliere = () => {
                     <section>
                         <div className={styles.imagesGrid}>
                             {data.atelier.images.map(image => (
-                                <img key={image} src={`images/${data.atelier.dir}/${image}`} alt="..." loading="lazy" />
+                                <Image key={image} src={`/images/${data.atelier.dir}/${image}`} alt="..." loading="lazy" width={320} height={320}/>
                             ))}
                         </div>
                     </section>
@@ -88,7 +89,7 @@ const Ateliere = () => {
                             <>
                                 <Slider
                                     images={item?.images?.map(
-                                        (img) => `images/${item.dir}/thumbnail_${img}`
+                                        (img) => `/images/${item.dir}/thumbnail_${img}`
                                     )}
                                     title={item.title}
                                 />
@@ -98,7 +99,7 @@ const Ateliere = () => {
                         <hr style={{ marginTop: 0 }} />
                     </div>
                 ))}
-        </main>
+        </>
     )
 }
 

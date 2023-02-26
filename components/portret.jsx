@@ -11,7 +11,7 @@ const Portret = () => {
             <>
               <Slider
                 images={item?.images?.map(
-                  (img) => `images/${item.dir}/${img}`
+                  (img) => `/images/${item.dir}/${img}`
                 )}
                 title={item.title}
               />

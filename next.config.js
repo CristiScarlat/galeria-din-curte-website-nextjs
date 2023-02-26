@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  trailingSlash: true,
-  images: {
-    path: '/_next/image/', 
-  }
-
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  swcMinify: true
 }
 
 module.exports = nextConfig

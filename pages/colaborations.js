@@ -42,7 +42,7 @@ const Colaborations = () => {
     }
 
     return(
-        <main>
+        <>
             <NavHeader onTabSelect={onTabSelect} selectedTab={selectedTab} items={navHeaderItems}/>
             <hr/>
             {selectedTab === "about" && data.colaborations.map(colab => (
@@ -53,7 +53,7 @@ const Colaborations = () => {
                     {colab.items.map(item => (
                         <>
                         <hr style={{marginTop: 0}}/>
-                        <Slider images={item.images.map(img => `images/${item.dir}/thumbnail_${img}`)} title={item.title} date={item.date}/> 
+                        <Slider images={item.images.map(img => `/images/${item.dir}/thumbnail_${img}`)} title={item.title} date={item.date}/> 
                         </>
                     ))}
                 </div>
@@ -64,7 +64,7 @@ const Colaborations = () => {
                 <div className="w-100"><span>Multumim Liviu George Dumitru.</span></div>
             <iframe className="youtubeIframe" src="https://www.youtube.com/embed/UA6e1etlhmA" title="Copii pasionați de arta plastică iberică expun la Bastion. Au fost premiați de Ambasadorul Spaniei" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </article>}
-        </main>
+        </>
     )
 }
 
