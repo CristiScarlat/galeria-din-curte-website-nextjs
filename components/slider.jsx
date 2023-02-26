@@ -32,11 +32,9 @@ const Slider = ({ images, title, date, description }) => {
     <div className="mt-2 mb-2">
       <div className="d-flex align-items-center justify-content-between">
         <h4>{title}</h4>
-        <span style={{color: 'gray'}}>{date}</span>
+        <span style={{ color: "gray" }}>{date}</span>
       </div>
-      <div>
-        {description && <p>{description}</p>}
-      </div>
+      <div>{description && <p>{description}</p>}</div>
       <div key={title} style={{ position: "relative" }}>
         <button
           className={styles.buttonLeft}
@@ -48,7 +46,17 @@ const Slider = ({ images, title, date, description }) => {
         </button>
         <div className={styles.imagesList} ref={sliderRef}>
           {images.map((img) => (
-            <Image key={img} src={img} alt={img} width={320} height={320}/>
+            <Image
+              key={img}
+              src={img}
+              alt={img}
+              loading="lazy"
+              width={320}
+              height={320}
+              quality={100}
+              blurDataURL="/blur.jpg"
+              placeholder="blur"
+            />
           ))}
         </div>
         <button

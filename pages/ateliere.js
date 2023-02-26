@@ -62,7 +62,7 @@ const Ateliere = () => {
                         <p className='mb-0'>{`In cadrul Galeriei din Curte, într-o ambianță perfectă pentru creație, 
                 se desfășuară cursul de arte plastice dedicat copiilor și adolescenților.
                 `}</p>
-                <p className='mt-0'>{`Studiul artelor plastice, formează o personalitate armonioasă celor tineri, dezvoltă sensibilitatea artistică
+                        <p className='mt-0'>{`Studiul artelor plastice, formează o personalitate armonioasă celor tineri, dezvoltă sensibilitatea artistică
                 și educă cursanții in domeniul istoriei artei. Acest curs este o alternativă binevenită și utilă 
                 pentru petrecerea timpului liber în contact cu valorile culturale locale și universale asigurând o adevărată infuzie de cultură, participanților.`}</p>
                     </section>
@@ -70,7 +70,16 @@ const Ateliere = () => {
                     <section>
                         <div className={styles.imagesGrid}>
                             {data.atelier.images.map(image => (
-                                <Image key={image} src={`/images/${data.atelier.dir}/${image}`} alt="..." loading="lazy" width={320} height={320}/>
+                                <Image
+                                    key={image}
+                                    src={`/images/${data.atelier.dir}/${image}`}
+                                    alt="..."
+                                    loading="lazy"
+                                    width={320}
+                                    height={320}
+                                    quality={100}
+                                    blurDataURL='/blur.jpg'
+                                    placeholder="blur" />
                             ))}
                         </div>
                     </section>
@@ -82,23 +91,23 @@ const Ateliere = () => {
                 <iframe className="youtubeIframe" src="https://www.youtube.com/embed/0cBB-0wCE8A" title="Expozitia de arte plastice a copiilor." frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>}
             {selectedTab === 'portret' && data.portret.map((obj) => (
-                    <div key={obj?.title} style={{ margin: "auto" }}>
-                        <h4>{obj?.title}</h4>
-                        <hr/>
-                        {obj?.items?.map((item) => (
-                            <>
-                                <Slider
-                                    images={item?.images?.map(
-                                        (img) => `/images/${item.dir}/thumbnail_${img}`
-                                    )}
-                                    title={item.title}
-                                />
-                                <div className="mb-3" />
-                            </>
-                        ))}
-                        <hr style={{ marginTop: 0 }} />
-                    </div>
-                ))}
+                <div key={obj?.title} style={{ margin: "auto" }}>
+                    <h4>{obj?.title}</h4>
+                    <hr />
+                    {obj?.items?.map((item) => (
+                        <>
+                            <Slider
+                                images={item?.images?.map(
+                                    (img) => `/images/${item.dir}/thumbnail_${img}`
+                                )}
+                                title={item.title}
+                            />
+                            <div className="mb-3" />
+                        </>
+                    ))}
+                    <hr style={{ marginTop: 0 }} />
+                </div>
+            ))}
         </>
     )
 }
