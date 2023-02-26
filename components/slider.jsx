@@ -36,14 +36,14 @@ const Slider = ({ images, title, date, description }) => {
       </div>
       <div>{description && <p>{description}</p>}</div>
       <div key={title} style={{ position: "relative" }}>
-        <button
+        {images.length > 1 && <button
           className={styles.buttonLeft}
           onClick={handleScrollLeft}
           disabled={leftBtnDisabled}
           style={{ visibility: leftBtnDisabled ? "hidden" : "visible" }}
         >
           <AiFillCaretLeft />
-        </button>
+        </button>}
         <div className={styles.imagesList} ref={sliderRef}>
           {images.map((img) => (
             <Image
@@ -51,6 +51,7 @@ const Slider = ({ images, title, date, description }) => {
               src={img}
               alt={img}
               loading="lazy"
+              style={img.includes('thumbnail_rendezVousLaKralik') && {width: 'auto', height: 'auto'}}
               width={320}
               height={320}
               quality={100}
@@ -59,14 +60,14 @@ const Slider = ({ images, title, date, description }) => {
             />
           ))}
         </div>
-        <button
+        {images.length > 1 && <button
           className={styles.buttonRight}
           onClick={handleScrollRight}
           disabled={rightBtnDisabled}
           style={{ visibility: rightBtnDisabled ? "hidden" : "visible" }}
         >
           <AiFillCaretRight />
-        </button>
+        </button>}
       </div>
     </div>
   );
