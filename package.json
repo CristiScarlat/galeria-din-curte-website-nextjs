@@ -19,11 +19,11 @@
     "react-cookie-consent": "^8.0.1",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "next-sitemap": "^3.1.54"
   },
   "devDependencies": {
     "eslint": "8.28.0",
-    "eslint-config-next": "13.0.5",
-    "next-sitemap": "^3.1.54"
+    "eslint-config-next": "13.0.5"
   }
 }
