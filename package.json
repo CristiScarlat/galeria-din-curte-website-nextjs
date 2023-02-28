@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "export": "next build && next export",
     "start": "next start",
     "lint": "next lint",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "eslint": "8.28.0",
-    "eslint-config-next": "13.0.5"
+    "eslint-config-next": "13.0.5",
+    "next-sitemap": "^3.1.54"
   }
 }
