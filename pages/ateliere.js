@@ -6,6 +6,7 @@ import data from "../data/data.json";
 import styles from "../styles/Ateliere.module.css";
 import Slider from '../components/slider';
 import Image from 'next/image';
+import ImageWithSpinner from '../components/imageWithSpinner';
 
 const Ateliere = () => {
     const [selectedTab, setSelectedTab] = useState('about');
@@ -70,7 +71,7 @@ const Ateliere = () => {
                     <section>
                         <div className={styles.imagesGrid}>
                             {data.atelier.images.map(image => (
-                                <Image
+                                <ImageWithSpinner
                                     key={image}
                                     src={`/images/${data.atelier.dir}/${image}`}
                                     alt="..."
@@ -78,8 +79,7 @@ const Ateliere = () => {
                                     width={320}
                                     height={320}
                                     quality={100}
-                                    blurDataURL='/blur.jpg'
-                                    placeholder="blur" />
+                                    />
                             ))}
                         </div>
                     </section>

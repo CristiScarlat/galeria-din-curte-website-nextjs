@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import styles from "./styles/slider.module.scss";
-import Image from "next/image";
+import ImageWithSpinner from "./imageWithSpinner";
 
 const Slider = ({ images, title, date, description }) => {
   const [leftBtnDisabled, setLeftBtnDisabled] = useState(false);
@@ -46,7 +46,7 @@ const Slider = ({ images, title, date, description }) => {
         </button>}
         <div className={styles.imagesList} ref={sliderRef}>
           {images.map((img) => (
-            <Image
+            <ImageWithSpinner
               key={img}
               src={img}
               alt={img}
@@ -55,8 +55,6 @@ const Slider = ({ images, title, date, description }) => {
               width={320}
               height={320}
               quality={100}
-              blurDataURL="/blur.jpg"
-              placeholder="blur"
             />
           ))}
         </div>
