@@ -7,9 +7,14 @@ import styles from "../styles/Ateliere.module.css";
 import Slider from '../components/slider';
 import Image from 'next/image';
 import ImageWithSpinner from '../components/imageWithSpinner';
+import Modal from "../components/modal";
+import {getBigImage} from "../utils/utils";
+import {Spinner} from "react-bootstrap";
 
 const Ateliere = () => {
     const [selectedTab, setSelectedTab] = useState('about');
+    const [selectedImage, setSelectedImage] = useState();
+    const [zoomImageLoaded, setZoomImageLoaded] = useState(false);
     const router = useRouter();
 
     const navHeaderItems = [
@@ -52,6 +57,43 @@ const Ateliere = () => {
         }
     }
 
+
+    const handleSelectPrev = () => {
+        if (selectedImage === 0) return;
+        setZoomImageLoaded(false);
+        setSelectedImage(state => state - 1);
+    }
+
+    const handleSelectNext = () => {
+        if (selectedImage === data.atelier.images.length - 1) return;
+        setZoomImageLoaded(false);
+        setSelectedImage(state => state + 1);
+    }
+
+    let touchStart = false;
+    let touchMoves = [];
+    const handleOnTouchStart = () => {
+        touchStart = true;
+    }
+
+    const handleOnTouchEnd = () => {
+        touchStart = false;
+        if (touchMoves.length < 2) return
+        if (touchMoves[0] > touchMoves[1]) {
+            handleSelectNext()
+        } else {
+            handleSelectPrev()
+        }
+        touchMoves = [];
+    }
+
+    const handleOnTouchMove = (e) => {
+        console.dir(e.target)
+        if (touchStart && touchMoves.length < 2 && e.touches.length === 1) {
+            touchMoves.push(e?.touches[0]?.clientX)
+        }
+    }
+
     return (
         <>
             <NavHeader onTabSelect={onTabSelect} selectedTab={selectedTab} items={navHeaderItems} />
@@ -70,7 +112,7 @@ const Ateliere = () => {
                     <hr />
                     <section>
                         <div className={styles.imagesGrid}>
-                            {data.atelier.images.map(image => (
+                            {data.atelier.images.map((image, index) => (
                                 <ImageWithSpinner
                                     key={image}
                                     src={`/images/${data.atelier.dir}/${image}`}
@@ -79,10 +121,35 @@ const Ateliere = () => {
                                     width={320}
                                     height={320}
                                     quality={100}
+                                    onClick={() => setSelectedImage(index)}
                                     />
                             ))}
                         </div>
                     </section>
+
+                    <Modal
+                      className="min-h-100"
+                      show={selectedImage !== undefined}
+                      onClose={() => setSelectedImage(undefined)}
+                      handlePrev={handleSelectPrev}
+                      handleNext={handleSelectNext}
+                      selectedImage={selectedImage}
+                      count={data.atelier.images.length}>
+                        <div  style={{position: 'relative'}} className="d-flex justify-content-center">
+                            <img
+                              src={`/images/${data.atelier.dir}/${data.atelier.images[selectedImage]}`}
+                              alt="gallery item"
+                              className="img-fluid"
+                              onTouchStart={handleOnTouchStart}
+                              onTouchEnd={handleOnTouchEnd}
+                              onTouchMove={handleOnTouchMove}
+                              onLoad={() => setZoomImageLoaded(true)}
+                              style={{opacity: zoomImageLoaded ? 1 : 0}}
+                            />
+                            {!zoomImageLoaded && <Spinner style={{position: 'absolute', top: '50%', right: '50%'}}/>}
+                        </div>
+                    </Modal>
+
                 </>}
             {selectedTab === 'media' && <div className="d-flex align-items-center flex-column gap-3">
                 <iframe className="youtubeIframe" src="https://www.youtube.com/embed/7itNCEH1bLA" title="Expozitia copiilor, File de poveste, Galeria din Curte, Timisoara 2022." frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
