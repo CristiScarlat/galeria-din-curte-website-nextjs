@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {useState} from "react";
 import {Spinner} from "react-bootstrap";
 
@@ -16,14 +15,13 @@ const ImageWithSpinner = ({
     const [loaded, setLoaded] = useState(false);
     return (
         <div style={{position: "relative", border: "1px solid gray"}}>
-            <Image
+            <img
                 src={src}
                 alt={alt}
                 loading={loading}
                 style={{...style, position: "relative", visibility: loaded ? "visible" : "hidden"}}
                 width={width}
                 height={height}
-                quality={quality}
                 onLoad={() => setLoaded(true)}
                 onClick={() => onClick(src)}
             />

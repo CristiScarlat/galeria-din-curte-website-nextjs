@@ -5,10 +5,8 @@ import NavHeader from "../components/navHeader";
 import data from "../data/data.json";
 import styles from "../styles/Ateliere.module.css";
 import Slider from '../components/slider';
-import Image from 'next/image';
 import ImageWithSpinner from '../components/imageWithSpinner';
 import Modal from "../components/modal";
-import {getBigImage} from "../utils/utils";
 import {Spinner} from "react-bootstrap";
 
 const Ateliere = () => {

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { FcHome } from 'react-icons/fc';
 import NavHeader from "../components/navHeader";
 import { useRouter } from 'next/router';
-import Image from 'next/image';
 import styles from "../styles/About.module.css";
 
 const About = () => {
