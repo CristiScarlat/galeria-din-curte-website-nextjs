@@ -152,6 +152,22 @@
   ],
   "galleryEvents": [
     {
+      "title": "Fantomele din Fabric",
+      "description": [
+        "\"Galeria din Curte\" anunță deschiderea unei noi expoziții, intitulată \"Fantomele din Fabric\", în data de 25 noiembrie 2023, la ora 17, la sediul său din strada Gheorghe Lazăr nr.4. Expoziția se integrează în seria de proiecte demarată, la începutul acestui an, în cadrul cursului de educație plastica pentru copii și adolescenți coordonat de artist plastic dr.Oana Bolog-Bleich.Aceste proiecte sunt menite să mobilizeze comunitatea locală pentru a participa la evenimentele subsumate Proiectului \"Timișoara 2023 - Capitală europeană a culturii\", devenind mai conștientă, mai avizată în privința patrimoniului istoric și arhitectural multicultural al orașului.",
+        "Proiectele includ activități diverse, care îi poartă pe cursanți prin cartierele Timișoarei, oferind informații despre clădiri, istorie și personalități locale, ce sunt apoi valorificate plastic în lucrările realizate în cadrul cursului pe care îl coordonez și  prezentate publicului în expoziții succesive.",
+        "După un prim proiect, dedicat zonei centrale a Timișoarei, intitulat \"Casa mea din Cetate\", Galeria din curte își propune acum să atragă atenția asupra istoriei și  generoasei arhitecturi a cartierului Fabric, dar și în privința personalităților care au locuit acolo de-a lungul vremii. Toate acestea au fost prezentate cursanților prin imagini de epocă, dar au fost și descoperite nemijlocit într-un joc de căutare de comori prin cartier.",
+        "Clădirile explorate, viața celor care le-au construit și folosit au fost percepute de copii ca fantome ale trecutului și au fost redate grafic ca atare.",
+        "De aceea, expoziția care încheie acest din urmă proiect prezintă \"Fantomele din Fabric\" prin lucrări realizate de copii într-un format inedit, unic, care le conferă profunzime și rafinament.Mici scenografii imaginate intr-un microunivers magic,inspirat de frumusețea istorică si arhitectonică a clădirilor.",
+        "Vă invităm să descoperiți  viziunea unică a acestor copii în cadrul expoziției ce va avea vernisajul sâmbătă, 25 noiembrie 2023 la ora 17 și va fi deschisă publicului de luni până vineri, de la 16:30-20, sambata 10-14 sau prin rezervare telefonica la 0723 67 33 73. Sunt așteptați cu drag toți cei care iubesc orașul, frumosul în general, indiferent de vârstă."
+      ],
+      "dir": "fantomeleDinFabric",
+      "date": "25-noiembrie-2023",
+      "items": [
+        "fantomele_din_fabric.jpg"
+      ]
+    },
+    {
       "title": "Rendez-vous la Kralik",
       "description": [],
       "dir": "rendezVousLaKralik",
