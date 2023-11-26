@@ -19,7 +19,7 @@ const NavHeader = ({ onTabSelect, selectedTab, items = [], contact }) => {
         ))}
         {contact && <div className="d-flex flex-column justify-content-center">
           {Object.keys(contact).map(k => (
-            <p className="m-0"><span className="me-1">{k}:</span>{contact[k]}</p>
+            <p key={k} className="m-0"><span className="me-1">{k}:</span>{contact[k]}</p>
           ))}
         </div>}
     </div>
