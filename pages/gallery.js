@@ -97,7 +97,7 @@ const Gallery = () => {
                   allowFullScreen></iframe>
 
               </div>
-              <hr style={{marginTop: 0}}/>
+              <hr />
             </>
             :
             <>
@@ -127,7 +127,7 @@ const Gallery = () => {
         </div>
         <hr style={{marginTop: 0, width: "100%"}}/>
         <div className="text-center">
-          <h5 className="m-auto mb-3" style={{maxWidth: '60%'}}>Fantomele din fabric</h5>
+          <h5 className="m-auto mb-3" style={{maxWidth: '60%'}}>Fantomele din Fabric</h5>
           <iframe
             width="380px"
             height="476px"

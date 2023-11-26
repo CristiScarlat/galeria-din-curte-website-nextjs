@@ -13,7 +13,7 @@ export default function Home() {
               backgroundRepeat: 'no-repeat, repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'center'
-            }}>Fantomele din fabric</HomeLink>
+            }}>Fantomele din Fabric</HomeLink>
           </Link>
           <Link href="/gallery" legacyBehavior passHref>
             <HomeLink style={{
