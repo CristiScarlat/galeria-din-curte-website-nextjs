@@ -97,7 +97,7 @@ const Slider = ({images, title, date, description}) => {
                 src={img}
                 alt={img}
                 loading="lazy"
-                style={img.includes('thumbnail_rendezVousLaKralik') && {width: 'auto', height: 'auto'}}
+                style={img.includes('thumbnail_rendezVousLaKralik') && {width: 320, height: 'auto'}}
                 width={320}
                 height={320}
                 quality={100}

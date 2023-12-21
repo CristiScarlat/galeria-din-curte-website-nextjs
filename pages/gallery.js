@@ -83,7 +83,7 @@ const Gallery = () => {
           <p>{event.description}</p>
           {event.title === "Fantomele din Fabric" ?
             <>
-              <div className="d-flex align-items-center justify-content-center gap-3">
+              <div className="d-flex flex-wrap align-items-center justify-content-center gap-3">
                 <img src={`/images/${event.dir}/${event.items[0]}`}
                      width="380px"
                      height="476px"
