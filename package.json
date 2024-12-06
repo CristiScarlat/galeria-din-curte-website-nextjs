@@ -8,8 +8,7 @@
     "postbuild": "next-sitemap",
     "export": "next build && next export",
     "start": "next start",
-    "lint": "next lint",
-    "deploy-prod": "netlify deploy --site 757a00ca-e49d-446a-a309-477787180e3d --prod --dir out"
+    "lint": "next lint"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",

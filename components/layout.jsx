@@ -80,7 +80,9 @@ export default function Layout({ children }) {
       >
         This website uses cookies to enhance the user experience.{" "}
       </CookieConsent>
-      {/* <Footer /> */}
+      <footer>
+        <p style={{color: "#6b6a6a", textAlign: "center"}}>Copyright 2023 © Galeria din Curte. Toate drepturile rezervate.</p>
+      </footer>
     </>
   );
 }

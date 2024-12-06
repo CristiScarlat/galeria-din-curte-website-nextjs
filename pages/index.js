@@ -9,11 +9,11 @@ export default function Home() {
         <section className="ms-3 me-3 d-flex justify-content-center align-items-center flex-wrap gap-3">
         <Link href={{ pathname: '/gallery', query: { tab: 'events' } }} legacyBehavior passHref>
             <HomeLink style={{
-              backgroundImage: 'url(/images/fantomeleDinFabric/fantomele_din_fabric.jpg)',
+              backgroundImage: 'url(/images/targ_de_craciun_2024/thumbnail_galeriadincurte-6-dec-2024.jpg)',
               backgroundRepeat: 'no-repeat, repeat',
               backgroundSize: 'cover',
-              backgroundPosition: 'center'
-            }}>Fantomele din Fabric</HomeLink>
+              backgroundPosition: 'top'
+            }}>Târg de Crăciun</HomeLink>
           </Link>
           <Link href="/gallery" legacyBehavior passHref>
             <HomeLink style={{

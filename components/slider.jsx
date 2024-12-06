@@ -73,6 +73,8 @@ const Slider = ({images, title, date, description}) => {
     }
   }
 
+  console.log(selectedImage)
+
   return (
     <>
       <div className="mt-2 mb-2">
